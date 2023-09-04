@@ -16,6 +16,7 @@ function AuthGoogleButton() {
         redirectTo: `${location.origin}/auth/callback`,
       },
     });
+    console.log(location.origin);
     router.refresh();
   }
 
