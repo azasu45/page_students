@@ -4,6 +4,8 @@ import { Card } from "@tremor/react";
 import { cookies } from "next/headers";
 import TextCode from "./text-code";
 
+export const dynamic = "force-dynamic";
+
 async function Page({ params }: { params: { id: string } }) {
   const supabase = createServerComponentClient<Database>({ cookies });
 

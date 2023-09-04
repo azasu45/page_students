@@ -5,6 +5,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Database } from "@alias/lib/database.types";
 
+export const dynamic = "force-dynamic";
+
 export default async function Layout({
   children,
   params,

@@ -14,6 +14,8 @@ import {
 import { Database } from "@alias/lib/database.types";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   const supabase = createServerComponentClient<Database>({ cookies });
 

@@ -4,6 +4,8 @@ import { cookies } from "next/headers";
 import { Database } from "@alias/lib/database.types";
 import { Button, Card, Flex, Text, TextInput } from "@tremor/react";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page({ params }: { params: { id: string } }) {
   const supabase = createServerComponentClient<Database>({ cookies });
 

@@ -3,7 +3,7 @@
 import { Bold, Button, Divider, Text, TextInput } from "@tremor/react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-//mport AuthGoogleButton from "./auth-google-button";
+import AuthGoogleButton from "./auth-google-button";
 
 export default function Login() {
   const searchParams = useSearchParams();
@@ -17,7 +17,7 @@ export default function Login() {
             Iniciar sesión en su cuenta
           </h1>
           <div className="flex justify-center">
-            {/* <AuthGoogleButton /> */}
+            <AuthGoogleButton />
           </div>
           <Divider />
           <form
