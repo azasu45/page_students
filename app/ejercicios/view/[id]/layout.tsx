@@ -1,9 +1,9 @@
-import { Database } from "@alias/lib/database.types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import { Text } from "@tremor/react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { Database } from "@alias/lib/database.types";
 
 export default async function Layout({
   children,

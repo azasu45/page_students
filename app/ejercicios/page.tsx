@@ -1,4 +1,3 @@
-import { Database } from "@alias/lib/database.types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
@@ -12,6 +11,7 @@ import {
   Card,
   Text,
 } from "@tremor/react";
+import { Database } from "@alias/lib/database.types";
 import Link from "next/link";
 
 export default async function Page() {

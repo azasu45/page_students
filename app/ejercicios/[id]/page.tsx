@@ -1,7 +1,7 @@
-import { Database } from "@alias/lib/database.types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
+import { Database } from "@alias/lib/database.types";
 import { Button, Card, Flex, Text, TextInput } from "@tremor/react";
 
 export default async function Page({ params }: { params: { id: string } }) {

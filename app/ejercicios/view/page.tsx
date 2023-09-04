@@ -1,7 +1,7 @@
 import { Card, List, ListItem, Title } from "@tremor/react";
-import { Database } from "@alias/lib/database.types";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
+import { Database } from "@alias/lib/database.types";
 import { cookies } from "next/headers";
 import Link from "next/link";
 
