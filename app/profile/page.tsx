@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 import { Database } from "@alias/lib/database.types";
-import AccountForm from "./account-form";
+//import AccountForm from "./account-form";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
 export default async function Account() {
@@ -10,5 +10,6 @@ export default async function Account() {
     data: { session },
   } = await supabase.auth.getSession();
 
-  return <AccountForm session={session} />;
+  // return <AccountForm session={session} />;
+  return <>Account</>;
 }
